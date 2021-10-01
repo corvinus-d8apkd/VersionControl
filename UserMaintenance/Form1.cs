@@ -35,5 +35,10 @@ namespace UserMaintenance
             };
             users.Add(u);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            users.Remove((User)listBox1.SelectedItem);
+        }
     }
 }
