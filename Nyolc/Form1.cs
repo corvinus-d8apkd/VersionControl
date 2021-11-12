@@ -40,7 +40,7 @@ namespace Nyolc
             var maxPosition = 0;
             foreach (var ball in _balls)
             {
-                ball.MoveBall();
+                
                 if (ball.Left > maxPosition)
                     maxPosition = ball.Left;
             }
