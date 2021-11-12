@@ -47,9 +47,9 @@ namespace Nyolc
 
             if (maxPosition > 1000)
             {
-                var oldestBall = _toys[0];
-                mainPanel.Controls.Remove(oldestBall);
-                _toys.Remove(oldestBall);
+                var oldestToy = _toys[0];
+                mainPanel.Controls.Remove(oldestToy);
+                _toys.Remove(oldestToy);
             }
         }
     }
