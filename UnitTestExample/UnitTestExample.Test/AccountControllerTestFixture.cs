@@ -14,6 +14,8 @@ namespace UnitTestExample.Test
 {
     public class AccountControllerTestFixture
     {
+        public Guid ID { get; private set; }
+
         [
             Test,
             TestCase("abcd1234", false),
@@ -45,10 +47,12 @@ namespace UnitTestExample.Test
         ]
         public void TestRegisterHappyPath(string email, string password)
         {
+            ID = Guid.NewGuid();
             var accountController = new AccountController();
+            
             var actualResult = accountController.Register(email, password);
             Assert.AreEqual(email, actualResult.Email);
-            Assert.AreEqual(password, actualResult.Password);
+            //Assert.AreEqual(password, actualResult.Password);
             Assert.AreNotEqual(Guid.Empty, actualResult.ID);
         }
         [
