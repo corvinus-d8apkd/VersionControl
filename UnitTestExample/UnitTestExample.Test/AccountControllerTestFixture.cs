@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using UnitTestExample.Controllers;
 using Assert = NUnit.Framework.Assert;
@@ -26,7 +27,14 @@ namespace UnitTestExample.Test
             var actualResult = accountController.ValidateEmail(email);
             Assert.AreEqual(expectedResult, actualResult);
 
-            
+        }
+        public bool ValidatePassword(string password)
+        {
+            var kisbetus = new Regex(@"[a-z]+");
+            var nagybetus = new Regex(@"[A-Z]+");
+            var szam = new Regex(@"[0-9]+");
+            var nyolchosszu = new Regex(@".{8,}");
+            return kisbetus.IsMatch(password) && nagybetus.IsMatch(password) && szam.IsMatch(password) && nyolchosszu.IsMatch(password);
         }
     }
     
