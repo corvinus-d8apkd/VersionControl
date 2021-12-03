@@ -8,8 +8,8 @@ namespace Szimulacio.Entities
 {
     class DeathProbability
     {
-        public Gender GenderDeath { get; set; }
-        public int AgeDeath { get; set; }
-        public double PDeath { get; set; }
+        public Gender Gender { get; set; }
+        public byte Age { get; set; }
+        public double P { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace Szimulacio.Entities
     public class BirthProbability
     {
         public int Age { get; set; }
-        public int NbrOfChildrenBirth { get; set; }
-        public double PBirth { get; set; }
+        public int NbrOfChildren { get; set; }
+        public double P { get; set; }
     }
 }
