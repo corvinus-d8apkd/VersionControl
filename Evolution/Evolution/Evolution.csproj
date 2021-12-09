@@ -44,6 +44,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WorldsHardestGame %281%29">
+      <HintPath>Libs\WorldsHardestGame (1).dll</HintPath>
+    </Reference>
     <Reference Include="WorldsHardestGame, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Downloads\WorldsHardestGame.dll</HintPath>
